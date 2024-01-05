@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <body>
+    
+        <h2>signup</h2>
+        <form method="POST">
+            {% csrf_token %}
+            <label for="uname">User Name : </label>
+            <input type="text" placeholder="Enter Username" name="uname"><br><br>
+            <label for="Email">Email ID : </label>
+            <input type="text" placeholder="Enter Email ID" name="Email"><br><br>
+            <label for="password">Password : </label>
+            <input type="password" placeholder="Enter Password" name="password"><br><br>
+            <label for="password1">Confirm Password : </label>
+            <input type="password" placeholder="Enter Confirm Password" name="password1"><br><br>
+            <input type="submit" value="SignUp"> 
+        </form>
+    </body>
+</html>
